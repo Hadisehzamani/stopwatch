@@ -11,7 +11,7 @@ body{
     background: #6994c5;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 80px 0;
     font-family: 'poppins';
     color: white;
 }
@@ -20,21 +20,30 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
-
-.timer {
-    position: relative;
-    width: 1000px;
+.test1{
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.15);
-    left: 4%;
-    padding: 40px 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+.test2{
+    position: relative  ;
+    width: 800px;
+    height: 150px;
+}
+.timer {
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    left: 0;
     font-family: 'poppins';
     color: white;
     font-size: 100px;
-    text-align: center;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    
 }
 
 .btn {
@@ -49,6 +58,14 @@ body{
     font-weight: 500;
     font-family: 'poppins';
     cursor: pointer;
+}
+
+.laps {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px;
+    display: none;
 }
 
 .lap-item {

@@ -48,6 +48,7 @@ function resetTimer() {
     timer.innerHTML = "00 : 00 : 00 : 000";
     laps.innerHTML = ""; 
     isRunning = false;
+    laps.style.display = 'none';
 }
 
 function lapTimer() {
@@ -57,6 +58,7 @@ function lapTimer() {
         lapItem.classList.add('lap-item');
         lapItem.innerHTML = lapTime;
         laps.appendChild(lapItem);
+        laps.style.display = 'block';
     }
 }
 
